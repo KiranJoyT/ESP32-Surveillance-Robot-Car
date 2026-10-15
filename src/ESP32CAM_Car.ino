@@ -16,8 +16,8 @@
 #define CAMERA_MODEL_AI_THINKER
 
 
-const char *ssid = "TRI_Asianet_2.4G";
-const char *password = "200C86B23360";
+const char *ssid = "";
+const char *password = "";
 
 IPAddress local_IP(192, 168, 1, 92);     // Static IP
 IPAddress gateway(192, 168, 1, 1);        // Your router gateway

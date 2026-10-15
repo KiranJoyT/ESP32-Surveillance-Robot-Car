@@ -16,8 +16,8 @@
 #define CAMERA_MODEL_AI_THINKER
 
 
-const char *ssid = "";
-const char *password = "";
+const char *ssid = WIFI_SSID;
+const char *password = WIFI_PASSWORD;
 
 IPAddress local_IP(192, 168, 1, 92);     // Static IP
 IPAddress gateway(192, 168, 1, 1);        // Your router gateway

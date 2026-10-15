@@ -1,69 +1,44 @@
-# ESP32 Surveillance Robotic Car
-
-An ESP32-based robotic car developed for remote operation and live video surveillance. The project combines an embedded controller, camera-based monitoring, and wireless control in a physical robotic platform.
+# ESP32-CAM Surveillance Robotic Car
 
 ## Project Overview
 
-The objective of this project was to build a mobile robotic platform that can be remotely controlled while providing live video for surveillance and monitoring.
+A physical surveillance robotic car built using an ESP32-CAM configured for the AI-Thinker camera module. The system provides a browser-based interface for wireless movement control and live camera streaming over Wi-Fi.
 
-The physical prototype was built and tested.
+##Repository Structure
 
-## Features
+src/ — Arduino source code
 
-- **Live video surveillance:** Camera-based live video monitoring.
-- **Wireless remote control:** Wireless operation of the robotic car.
-- **Physical prototype:** Hardware integration and assembly of the robotic platform.
-- **Embedded programming:** ESP32 programming using the Arduino IDE.
+hardware/ — Component list and wiring documentation
 
-## Hardware Components
+media/ — Prototype photos and demonstration video
 
-- ESP32-based controller
-- Camera module
-- Robotic car chassis
-- Drive motors
-- Motor driver
-- Power supply or battery
-- Additional components: [Add actual components used]
+docs/ — Setup and operating instructions
 
-## Software and Tools
+## Implemented in the Source Code
 
-- Arduino IDE
-- Arduino/C++ programming
-- ESP32 development platform
+- Live MJPEG camera stream.
+- Browser-based forward, backward, left, right, and stop controls.
+- Camera image settings, including brightness, contrast, frame size, and image quality.
+- Light ON/OFF control.
+- Wi-Fi connectivity with the device's local IP address displayed over the serial monitor.
 
-## Repository Structure
+## Hardware and Software
 
-- `src/` — Arduino source code
-- `hardware/` — Component list and wiring documentation
-- `media/` — Prototype photos and demonstration links
-- `docs/` — Setup and operating instructions
+- **Controller/camera:** ESP32-CAM, AI-Thinker configuration
+- **Development environment:** Arduino IDE
+- **Programming language:** Arduino/C++
+- **Interface:** Embedded web interface served by the ESP32
 
-## Setup and Usage
+## Usage
 
-1. Install the Arduino IDE.
-2. Install the appropriate ESP32 board support package.
-3. Install any required libraries used by the project.
-4. Open the Arduino sketch from the `src/` directory.
-5. Configure the board, pins, and network or remote-control settings according to the actual hardware.
-6. Upload the firmware to the ESP32.
-7. Power the robot and follow the project's operating instructions to control it and view the camera stream.
+1. Install ESP32 board support in the Arduino IDE.
+2. Ensure the required camera-server source files and libraries are available.
+3. Configure Wi-Fi credentials locally without committing them to GitHub.
+4. Select the appropriate ESP32-CAM board and upload the sketch.
+5. Connect to the same network and open the device's IP address in a browser.
+6. Use the on-screen controls to operate the car and view the camera stream.
 
-Refer to the source code and hardware documentation for the exact configuration.
-
-## Demonstration
-
-Prototype photos and a demonstration video will be added here.
-
-- Prototype images: `media/`
-- Video link: [Add your demonstration video URL]
-
-## Project Status
-
-Physical prototype built. Live video surveillance and wireless remote control are the confirmed project features.
-
-## Future Improvements
-
-Potential future work may include obstacle detection, autonomous navigation, and intelligent video analysis. These are not claimed as implemented features.
+Actual motor-driver wiring, power connections, and any board-specific settings should be documented from the hardware used in this build.
 
 ## Author
 
